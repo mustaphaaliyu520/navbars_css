@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbars</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <input 
+           type="text"
+           class="search"
+           id="search"
+           placeholder="e.g. Nike Traainers">
+           <button
+           onclick="toggleSearch()"
+           type="button"
+           class="search-toggle">
+        </button>
+        <nav class="navbar-menu">
+            <button
+            type="button"
+            class="uil uil-bag active">
+        </button>
+        <!-- other nav buttons -->
+        </nav>
+    </nav>
+    <script type="text/javascript">
+        const toggleSearch = () =>
+        document.body.classList.toggle("open");
+    </script>
+</body>
+</html>
